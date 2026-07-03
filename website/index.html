@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paper Heirloom Company — Shower Gift &amp; Activity</title>
+
+  <style>
+    :root {
+      --black: #090909;
+      --soft-black: #151515;
+      --ivory: #f7f1e8;
+      --cream: #fffaf1;
+      --gold: #c9a24a;
+      --muted: #8f8678;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--ivory);
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      font-size: 12px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 5.5vw, 64px);
+      line-height: 1.05;
+      font-weight: 400;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 38px);
+      font-weight: 400;
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    .accent {
+      width: 84px;
+      height: 1px;
+      background: var(--gold);
+      margin: 26px 0;
+    }
+
+    /* Hero */
+
+    .hero {
+      min-height: 92vh;
+      padding: 48px 56px 72px;
+      background:
+        linear-gradient(160deg, rgba(9,9,9,.82) 0%, rgba(21,21,21,.7) 50%, rgba(9,9,9,.88) 100%),
+        url("assets/dark-swan-origami-wedding-card-holders.png");
+      background-size: cover;
+      background-position: center;
+      color: var(--cream);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .hero-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: var(--gold);
+    }
+
+    .hero-nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      letter-spacing: .06em;
+    }
+
+    .hero-nav a {
+      color: #d8cfc0;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(201,162,74,.35);
+      padding-bottom: 2px;
+    }
+
+    .hero-nav a:hover {
+      color: var(--cream);
+      border-color: var(--gold);
+    }
+
+    .hero-copy {
+      max-width: 720px;
+      margin-top: auto;
+    }
+
+    .hero-copy p {
+      font-size: 18px;
+      color: #d8cfc0;
+      max-width: 580px;
+    }
+
+    .hero-tagline {
+      margin-top: 28px;
+      font-size: 14px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* Sections */
+
+    .section {
+      padding: 80px 56px;
+    }
+
+    .section-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      max-width: 680px;
+      margin-bottom: 48px;
+    }
+
+    .section-header p {
+      color: #3f3932;
+      font-size: 17px;
+      margin-top: 12px;
+    }
+
+    .intro-section {
+      background: var(--cream);
+    }
+
+    .intro-panel {
+      border: 1px solid rgba(201,162,74,.45);
+      padding: 56px 64px 60px;
+      background: rgba(255,255,255,.42);
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .concept-steps {
+      list-style: none;
+      counter-reset: concept-step;
+      display: grid;
+      gap: 28px;
+    }
+
+    .concept-steps li {
+      counter-increment: concept-step;
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 16px 22px;
+      align-items: start;
+      color: #3f3932;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .concept-steps li::before {
+      content: counter(concept-step);
+      width: 42px;
+      height: 42px;
+      border: 1px solid rgba(201,162,74,.55);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 16px;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .concept-steps strong {
+      display: block;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--black);
+      margin-bottom: 6px;
+    }
+
+    /* Journey */
+
+    .journey-section {
+      background: var(--soft-black);
+      color: var(--cream);
+    }
+
+    .journey-section .section-header p {
+      color: #b8afa3;
+    }
+
+    .journey-section h2 {
+      color: var(--cream);
+    }
+
+    .journey-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .journey-card {
+      border: 1px solid rgba(201,162,74,.3);
+      background: rgba(255,255,255,.04);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .journey-card__image {
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(201,162,74,.25);
+    }
+
+    .journey-card__image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .journey-card__body {
+      padding: 26px 24px 30px;
+      flex: 1;
+    }
+
+    .journey-card__phase {
+      display: block;
+      font-size: 12px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .journey-card__title {
+      font-size: 20px;
+      color: var(--cream);
+      margin-bottom: 12px;
+      font-weight: 400;
+    }
+
+    .journey-card__desc {
+      color: #d8cfc0;
+      font-size: 15px;
+    }
+
+    /* Gallery */
+
+    .gallery-section {
+      background: var(--ivory);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+    }
+
+    .gallery-item {
+      background: var(--cream);
+      border: 1px solid rgba(201,162,74,.35);
+      overflow: hidden;
+    }
+
+    .gallery-item img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .gallery-caption {
+      padding: 22px 24px 26px;
+    }
+
+    .gallery-caption strong {
+      display: block;
+      font-size: 13px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .gallery-caption p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* Panels */
+
+    .panels-section {
+      background: var(--soft-black);
+      color: var(--cream);
+    }
+
+    .panels-section h2 {
+      color: var(--cream);
+    }
+
+    .shower-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 28px;
+    }
+
+    .shower-panel {
+      border: 1px solid rgba(201,162,74,.35);
+      padding: 38px 36px;
+      background: rgba(255,255,255,.04);
+    }
+
+    .shower-panel h3 {
+      color: var(--cream);
+      margin-bottom: 14px;
+    }
+
+    .shower-panel p,
+    .shower-panel li {
+      color: #b8afa3;
+      font-size: 15px;
+    }
+
+    .shower-panel ul {
+      list-style: none;
+      display: grid;
+      gap: 14px;
+    }
+
+    .shower-panel li {
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding-top: 14px;
+    }
+
+    .shower-panel li strong {
+      display: block;
+      font-size: 13px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 4px;
+      font-weight: 400;
+    }
+
+    /* CTA */
+
+    .cta-section {
+      background: var(--cream);
+      text-align: center;
+    }
+
+    .cta-section .section-inner {
+      max-width: 640px;
+    }
+
+    .cta-section p {
+      color: #3f3932;
+      font-size: 17px;
+      margin-bottom: 32px;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--black);
+      color: var(--cream);
+      text-decoration: none;
+      padding: 14px 24px;
+      border: 1px solid var(--black);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    .button.gold {
+      background: var(--gold);
+      color: var(--black);
+      border-color: var(--gold);
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--black);
+      border-color: var(--gold);
+    }
+
+    .note {
+      margin-top: 26px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .site-footer {
+      padding: 32px 56px 48px;
+      text-align: center;
+      background: var(--ivory);
+      border-top: 1px solid rgba(0,0,0,.08);
+    }
+
+    .site-footer nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .site-footer a {
+      font-size: 14px;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .site-footer a:hover {
+      color: var(--gold);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .section {
+        padding: 36px 24px;
+      }
+
+      .journey-grid,
+      .gallery,
+      .shower-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .intro-panel {
+        padding: 44px 36px 48px;
+      }
+
+      .concept-steps {
+        gap: 24px;
+      }
+
+      .concept-steps li {
+        font-size: 16px;
+        grid-template-columns: 40px 1fr;
+        gap: 14px 18px;
+      }
+
+      .concept-steps li::before {
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+      }
+
+      .concept-steps strong {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .intro-panel {
+        padding: 36px 24px 40px;
+      }
+
+      .concept-steps li {
+        grid-template-columns: 36px 1fr;
+        gap: 12px 14px;
+      }
+
+      .concept-steps li::before {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-top">
+      <div class="brand">Paper Heirloom Company</div>
+      <nav class="hero-nav">
+        <a href="#">Purchase on Etsy →</a>
+      </nav>
+    </div>
+
+    <div class="hero-copy">
+      <div class="eyebrow">Bridal shower gift edition</div>
+      <h1>Fold together at the shower. Set them on the table at the wedding.</h1>
+      <p>
+        A gift version of the same concept — part activity, part keepsake,
+        part reception detail. Guests gather around the table, fold the
+        cranes together, and what they make becomes the ornament your
+        wedding tables were waiting for.
+      </p>
+      <p class="hero-tagline">Fold once. Cherish twice.</p>
+    </div>
+  </header>
+
+  <section class="section intro-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="eyebrow">The concept</div>
+        <h2>A shower gift that keeps working.</h2>
+        <p>
+          Most shower presents are lovely for a day. This one asks everyone
+          in the room to take part — then lives on at the reception as proof
+          that the celebration started long before the vows.
+        </p>
+      </div>
+
+      <div class="intro-panel">
+        <ol class="concept-steps">
+          <li>
+            <div>
+              <strong>At the bridal shower</strong>
+              Open the set together. Friends and family fold the cranes while
+              stories, laughter, and well-wishes fill the room.
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>After the party</strong>
+              The folded cranes travel home with you — packed up and kept safe
+              until the wedding.
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>On the wedding day</strong>
+              Those same cranes become your place card holders, set out on the
+              reception tables with each guest's name.
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section journey-section" id="journey">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="eyebrow">Three moments, one object</div>
+        <h2>From shower activity to table ornament.</h2>
+        <p>
+          The journey is always the same — a shared fold at the shower, a quiet
+          handoff after the party, and a reception detail no one could buy off
+          a shelf.
+        </p>
+      </div>
+
+      <div class="journey-grid">
+        <article class="journey-card">
+          <div class="journey-card__image">
+            <img
+              src="assets/origami-crane-flat-sheet.png"
+              alt="Flat printed origami crane sheet with gold fold guides"
+            />
+          </div>
+          <div class="journey-card__body">
+            <span class="journey-card__phase">At the shower</span>
+            <h3 class="journey-card__title">Open the set together</h3>
+            <p class="journey-card__desc">
+              Open the set as a shared moment — friends and family fold cranes
+              while stories, laughter, and well-wishes fill the room. A gentle,
+              guided activity anyone can join.
+            </p>
+          </div>
+        </article>
+
+        <article class="journey-card">
+          <div class="journey-card__image">
+            <img
+              src="assets/origami-crane-finished.png"
+              alt="Finished origami crane place card holder"
+            />
+          </div>
+          <div class="journey-card__body">
+            <span class="journey-card__phase">After the party</span>
+            <h3 class="journey-card__title">The cranes travel home</h3>
+            <p class="journey-card__desc">
+              Each folded crane travels home with the couple, already infused
+              with the hands and hearts of the people who love them. A table
+              ornament with memory built in — not a disposable party game.
+            </p>
+          </div>
+        </article>
+
+        <article class="journey-card">
+          <div class="journey-card__image">
+            <img
+              src="assets/dark-swan-origami-wedding-card-holders.png"
+              alt="Origami crane place card holders on wedding reception tables"
+            />
+          </div>
+          <div class="journey-card__body">
+            <span class="journey-card__phase">On the wedding day</span>
+            <h3 class="journey-card__title">Set them on the table</h3>
+            <p class="journey-card__desc">
+              Those same cranes return as place card holders — table ornaments
+              that are beautiful, personal, and impossible to buy off a shelf.
+              Guest names slide into each one; the shower and the wedding finally meet.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery-section" id="gallery">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="eyebrow">What arrives &amp; what you create</div>
+        <h2>Flat sheets at the shower. Folded cranes at the wedding.</h2>
+        <p>
+          The set ships as printed paper, not pre-assembled origami. Guests
+          fold together at the shower; the finished cranes are ready for your
+          guest cards on reception day.
+        </p>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery-item">
+          <img
+            src="assets/origami-crane-flat-sheet.png"
+            alt="Flat printed black origami crane sheet with gold fold guides"
+          />
+          <figcaption class="gallery-caption">
+            <strong>What guests fold at the shower</strong>
+            <p>
+              Each crane begins as a flat, printed square with fold lines and
+              gold-accented corners. The host opens the box; everyone follows
+              the guides together.
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            src="assets/origami-crane-finished.png"
+            alt="Finished black origami crane holding a place card"
+          />
+          <figcaption class="gallery-caption">
+            <strong>What lands on the wedding table</strong>
+            <p>
+              Once folded, each crane becomes a sculptural place card holder —
+              matte black paper, gold detail, and a slot ready for your guest
+              names at the reception.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section panels-section">
+    <div class="section-inner">
+      <div class="shower-grid">
+        <div class="shower-panel">
+          <h3>Why it works as a gift</h3>
+          <p>
+            Most shower presents are lovely for a day. This one asks everyone
+            to take part — then lives on at the reception as proof that the
+            celebration started long before the vows.
+          </p>
+          <div class="accent" style="margin: 24px 0;"></div>
+          <p>
+            It is part activity, part keepsake, and part reception detail —
+            a group gift that gives the couple something meaningful to unwrap,
+            make together, and display when the big day arrives.
+          </p>
+        </div>
+
+        <div class="shower-panel">
+          <h3>What makes it interactive</h3>
+          <ul>
+            <li>
+              <strong>Group folding</strong>
+              A gentle, guided activity anyone can join — no craft expertise required.
+            </li>
+            <li>
+              <strong>Flat sheets, same as the wedding set</strong>
+              Every crane still arrives unassembled, ready to be folded together.
+            </li>
+            <li>
+              <strong>Two moments, one object</strong>
+              The shower creates the cranes; the wedding displays them.
+            </li>
+            <li>
+              <strong>Made to be kept</strong>
+              A table ornament with memory built in — not a disposable party game.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="section-inner">
+      <div class="eyebrow">Bridal shower gift edition</div>
+      <h2>Request a shower gift set.</h2>
+      <p>
+        Perfect for bridal showers, bridesmaid gatherings, or a meaningful
+        group gift from the wedding party — fold once, cherish twice.
+      </p>
+
+      <div class="cta-row">
+        <a href="#" class="button gold">Request a Shower Gift Set</a>
+        <a href="#" class="button secondary">Ask About Custom Quantities</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <a href="#">Purchase on Etsy →</a>
+  </footer>
+</body>
+</html>
