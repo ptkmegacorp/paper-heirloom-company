@@ -125,10 +125,19 @@
 
     .hero-nav {
       display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
       font-size: 12px;
       letter-spacing: .06em;
+    }
+
+    .hero-logo {
+      display: block;
+      width: 72px;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 16px rgba(0,0,0,.35);
     }
 
     .hero-nav a {
@@ -558,6 +567,13 @@
     <div class="hero-top">
       <div class="brand">Paper Heirloom Company</div>
       <nav class="hero-nav">
+        <img
+          class="hero-logo"
+          src="assets/pigeon-flannel-logo.png"
+          alt="Paper Heirloom Company"
+          width="72"
+          height="72"
+        />
         <a href="#">Purchase on Etsy →</a>
       </nav>
     </div>
