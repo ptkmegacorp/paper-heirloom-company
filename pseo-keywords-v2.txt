@@ -1,0 +1,301 @@
+Paper Heirloom Company — pSEO Keyword Plan v2
+Generated: 2026-07-03
+Builds on: pseo-keywords-v1.txt
+
+================================================================================
+METHODOLOGY & DISCLAIMERS
+================================================================================
+
+Volume (Vol): Estimated US monthly searches — tiered, not pulled from a live tool.
+  VH  = very high   10,000+
+  H   = high        1,000 – 9,999
+  M   = medium      100 – 999
+  L   = low         10 – 99
+  VL  = very low    1 – 9
+  —   = unknown / programmatic long-tail (build for coverage, validate later)
+
+Difficulty (KD): Estimated ranking difficulty 1–100 (higher = harder).
+  Low      1–25   realistic for new domain with strong page + backlinks over time
+  Medium   26–50  needs authority, content depth, or long-tail angle
+  High     51–75  competitive SERPs (gift roundups, Etsy, Pinterest, major blogs)
+  Very High 76–100 broad head terms; deprioritize early
+
+Intent:
+  C  = commercial (ready to buy)
+  T  = transactional (product search, Etsy)
+  I  = informational (how-to, ideas)
+  N  = navigational (brand)
+  M  = mixed
+
+Priority (P):
+  P1 = ship first (best product fit + winnable)
+  P2 = wave 2 hubs and high-intent spokes
+  P3 = programmatic scale / long-tail
+  P4 = monitor only until domain authority grows
+
+Page status:
+  LIVE     = exists today
+  PLANNED  = assigned URL, not built
+  PROG     = programmatic template (many variants from one pattern)
+
+Site base (current): /
+Future custom domain example: paperheirloomcompany.com/{slug}/
+
+================================================================================
+URL ARCHITECTURE — HUB & SPOKE MAP
+================================================================================
+
+/                                          LIVE  Cluster B hub (shower → table)
+/origami-bridal-shower-gift/               PLANNED  Cluster A hub
+/origami-wedding-shower-gift/              PLANNED  Cluster A spoke (synonym hub)
+/shower-gift-becomes-place-cards/          PLANNED  Cluster B spoke
+/fold-together-bridal-shower-gift/         PLANNED  Cluster B spoke
+/interactive-bridal-shower-gift/           PLANNED  Cluster A/B spoke
+/group-bridal-shower-gift/                 PLANNED  Cluster A spoke
+/black-origami-crane-place-cards/          PLANNED  Cluster C hub
+/black-origami-crane-bridal-shower-gift/   PLANNED  Cluster C spoke
+/black-gold-origami-wedding/               PLANNED  Cluster C spoke
+/black-origami-crane-white-lettering/      PLANNED  Cluster F spoke
+/printed-origami-crane-wedding/            PLANNED  Cluster F spoke
+/embroidered-origami-crane-place-cards/    PLANNED  Cluster F spoke
+/origami-place-card-holders-wedding/       PLANNED  Cluster E hub
+/fold-yourself-wedding-place-cards/        PLANNED  Cluster E spoke
+/paper-crane-wedding-place-cards/          PLANNED  Cluster E spoke
+/etsy/                                     PLANNED  Cluster D hub (commercial)
+/etsy/origami-bridal-shower-gift/          PLANNED  Cluster D spoke
+/etsy/origami-place-card-holders/          PLANNED  Cluster D spoke
+/ideas/                                    PLANNED  Cluster G hub (top-of-funnel)
+/ideas/unique-bridal-shower-gifts/         PLANNED  Cluster G spoke
+/ideas/bridal-shower-activities-not-games/ PLANNED  Cluster G spoke
+/ideas/senbazuru-bridal-shower/            PLANNED  Cluster A spoke
+/how-to/                                   PLANNED  Cluster H hub (informational)
+/how-to/fold-origami-cranes-place-cards/   PLANNED  Cluster H spoke
+/how-to/flat-sheet-origami-wedding/        PLANNED  Cluster H spoke
+/guest-count/                              PROG     Cluster I (programmatic)
+/guest-count/{n}-guests/                 PROG     e.g. 50-guests, 100-guests
+/themes/                                   PROG     Cluster J (future themes)
+/themes/{theme-name}/                      PROG     good-wishes, garden-party, night-sky
+
+================================================================================
+MASTER KEYWORD TABLE — PRIORITY TARGETS (P1 & P2)
+================================================================================
+
+Format:
+keyword | cluster | vol | KD | intent | target URL | status | P
+
+--- P1: Core product (build these first) ---
+
+origami bridal shower gift                    | A | M  | 28 | T | /origami-bridal-shower-gift/              | PLANNED | P1
+origami wedding shower gift                   | A | M  | 30 | T | /origami-wedding-shower-gift/             | PLANNED | P1
+origami crane bridal shower gift              | A | L  | 18 | T | /origami-bridal-shower-gift/              | PLANNED | P1
+origami crane wedding shower gift             | A | L  | 20 | T | /origami-wedding-shower-gift/             | PLANNED | P1
+shower gift that becomes place cards          | B | L  | 12 | C | /shower-gift-becomes-place-cards/         | PLANNED | P1
+bridal shower gift that becomes wedding decor | B | M  | 35 | I | /shower-gift-becomes-place-cards/         | PLANNED | P1
+fold together bridal shower gift              | B | L  | 15 | C | /fold-together-bridal-shower-gift/      | PLANNED | P1
+shower to table wedding gift                  | B | VL |  8 | C | /                                           | LIVE    | P1
+interactive bridal shower gift                  | A | M  | 42 | I | /interactive-bridal-shower-gift/          | PLANNED | P1
+group bridal shower gift                        | A | H  | 48 | I | /group-bridal-shower-gift/                | PLANNED | P1
+black origami crane place cards                 | C | L  | 22 | T | /black-origami-crane-place-cards/         | PLANNED | P1
+black origami crane bridal shower gift          | C | VL | 10 | T | /black-origami-crane-bridal-shower-gift/  | PLANNED | P1
+origami place card holders wedding              | E | M  | 38 | T | /origami-place-card-holders-wedding/      | PLANNED | P1
+paper crane bridal shower gift                  | A | L  | 20 | T | /origami-bridal-shower-gift/              | PLANNED | P1
+flat sheet origami cranes wedding               | E | VL | 12 | I | /how-to/flat-sheet-origami-wedding/       | PLANNED | P1
+
+--- P2: Commercial + material + place cards ---
+
+origami bridal shower gift etsy                 | D | L  | 25 | T | /etsy/origami-bridal-shower-gift/         | PLANNED | P2
+origami wedding shower gift etsy                | D | L  | 25 | T | /etsy/origami-bridal-shower-gift/         | PLANNED | P2
+origami crane place cards etsy                  | D | M  | 40 | T | /etsy/origami-place-card-holders/         | PLANNED | P2
+origami place card holders etsy                 | D | M  | 42 | T | /etsy/origami-place-card-holders/         | PLANNED | P2
+black origami crane wedding etsy                | D | VL | 18 | T | /etsy/origami-place-card-holders/         | PLANNED | P2
+bridal shower origami activity                  | A | L  | 22 | I | /interactive-bridal-shower-gift/          | PLANNED | P2
+origami crane folding activity bridal shower    | A | VL | 10 | I | /interactive-bridal-shower-gift/          | PLANNED | P2
+fold at shower use at wedding                   | B | VL |  8 | I | /fold-together-bridal-shower-gift/      | PLANNED | P2
+black origami crane white lettering             | F | VL |  8 | T | /black-origami-crane-white-lettering/     | PLANNED | P2
+black origami crane gold accents                | F | VL | 10 | T | /black-gold-origami-wedding/              | PLANNED | P2
+black and gold origami wedding                  | C | L  | 28 | T | /black-gold-origami-wedding/              | PLANNED | P2
+printed origami crane wedding                   | F | VL | 12 | T | /printed-origami-crane-wedding/          | PLANNED | P2
+embroidered origami crane place cards           | F | VL |  8 | T | /embroidered-origami-crane-place-cards/  | PLANNED | P2
+personalized origami crane place cards          | F | L  | 30 | T | /printed-origami-crane-wedding/          | PLANNED | P2
+fold yourself wedding place cards               | E | M  | 35 | I | /fold-yourself-wedding-place-cards/       | PLANNED | P2
+DIY wedding place card holders origami          | E | L  | 32 | I | /fold-yourself-wedding-place-cards/       | PLANNED | P2
+paper crane wedding place cards                 | E | L  | 25 | T | /paper-crane-wedding-place-cards/       | PLANNED | P2
+senbazuru bridal shower gift                    | A | VL | 15 | I | /ideas/senbazuru-bridal-shower/           | PLANNED | P2
+meaningful bridal shower group gift             | A | M  | 45 | I | /group-bridal-shower-gift/                | PLANNED | P2
+bridal shower gift guests participate in        | B | L  | 20 | I | /interactive-bridal-shower-gift/          | PLANNED | P2
+
+================================================================================
+MASTER KEYWORD TABLE — P3 LONG-TAIL & QUESTIONS
+================================================================================
+
+what is a shower to table wedding gift          | B | VL |  5 | I | /                                           | LIVE    | P3
+can you use origami cranes as place cards       | H | L  | 18 | I | /how-to/fold-origami-cranes-place-cards/  | PLANNED | P3
+how to fold origami cranes for wedding place cards | H | L | 22 | I | /how-to/fold-origami-cranes-place-cards/ | PLANNED | P3
+flat origami sheets for wedding guests to fold  | H | VL |  8 | I | /how-to/flat-sheet-origami-wedding/       | PLANNED | P3
+where to buy origami bridal shower gift         | D | L  | 30 | T | /etsy/origami-bridal-shower-gift/         | PLANNED | P3
+best origami gift for bridal shower             | A | VL | 12 | I | /origami-bridal-shower-gift/              | PLANNED | P3
+bridal shower gift that doubles as wedding favor| B | L  | 25 | I | /shower-gift-becomes-place-cards/         | PLANNED | P3
+gift that connects shower and wedding day       | B | VL |  6 | I | /                                           | LIVE    | P3
+how many origami cranes for wedding guest count | I | VL |  8 | I | /guest-count/                             | PROG    | P3
+bridal shower origami gift for 50 guests        | I | VL |  5 | T | /guest-count/50-guests/                   | PROG    | P3
+bridal shower origami gift for 100 guests       | I | VL |  5 | T | /guest-count/100-guests/                  | PROG    | P3
+black origami crane place cards how to fold     | H | VL | 10 | I | /how-to/fold-origami-cranes-place-cards/  | PLANNED | P3
+printed origami crane sheets bridal shower      | F | VL |  6 | T | /printed-origami-crane-wedding/          | PLANNED | P3
+origami crane escort card holder                | E | VL |  8 | T | /origami-place-card-holders-wedding/      | PLANNED | P3
+origami crane table number holder               | E | VL | 10 | T | /origami-place-card-holders-wedding/      | PLANNED | P3
+japanese inspired wedding place cards           | E | L  | 30 | I | /black-gold-origami-wedding/              | PLANNED | P3
+origami table ornaments wedding reception       | E | L  | 28 | I | /origami-place-card-holders-wedding/      | PLANNED | P3
+shower gift not thrown away after party         | B | VL |  5 | I | /shower-gift-becomes-place-cards/         | PLANNED | P3
+two in one bridal shower wedding gift           | B | L  | 22 | I | /shower-gift-becomes-place-cards/         | PLANNED | P3
+
+================================================================================
+MASTER KEYWORD TABLE — P4 TOP-OF-FUNNEL (high KD, capture later)
+================================================================================
+
+unique bridal shower gift ideas                 | G | H  | 58 | I | /ideas/unique-bridal-shower-gifts/        | PLANNED | P4
+creative bridal shower gift ideas               | G | H  | 55 | I | /ideas/unique-bridal-shower-gifts/        | PLANNED | P4
+best bridal shower group gift                   | G | M  | 50 | I | /group-bridal-shower-gift/                | PLANNED | P4
+bridal shower gift with activity                | G | M  | 42 | I | /interactive-bridal-shower-gift/          | PLANNED | P4
+alternative to bingo bridal shower game         | G | M  | 38 | I | /ideas/bridal-shower-activities-not-games/ | PLANNED | P4
+unique wedding place card ideas                 | E | H  | 52 | I | /origami-place-card-holders-wedding/      | PLANNED | P4
+creative wedding place card holders             | E | M  | 45 | I | /origami-place-card-holders-wedding/      | PLANNED | P4
+thoughtful bridal shower gift 2026              | G | M  | 40 | I | /ideas/unique-bridal-shower-gifts/        | PLANNED | P4
+luxury bridal shower gift idea                  | G | M  | 48 | I | /group-bridal-shower-gift/                | PLANNED | P4
+
+================================================================================
+BRAND KEYWORDS
+================================================================================
+
+paper heirloom company                          | N | VL |  5 | N | /                                           | LIVE    | P1
+paper heirloom company etsy                     | N | VL |  5 | T | /etsy/                                      | PLANNED | P1
+paper heirloom company bridal shower            | N | VL |  3 | N | /origami-bridal-shower-gift/              | PLANNED | P1
+paper heirloom origami place cards              | N | VL |  3 | N | /origami-place-card-holders-wedding/      | PLANNED | P1
+
+================================================================================
+PROGRAMMATIC TEMPLATES (scale in v3+)
+================================================================================
+
+Template 1 — Guest count pages
+  URL:    /guest-count/{n}-guests/
+  Title:  Origami Bridal Shower Gift for {n} Guests
+  H1:     Shower gift set sized for {n} wedding guests
+  Keywords: bridal shower origami gift for {n} guests
+  n values: 25, 30, 40, 50, 60, 75, 80, 100, 120, 150, 200
+  Vol: VL each | KD: 5–12 | P: P3
+
+Template 2 — Etsy + product
+  URL:    /etsy/{product-slug}/
+  Title:  {Product} on Etsy — Paper Heirloom Company
+  Keywords: {product} etsy
+  Products: origami-bridal-shower-gift, origami-place-card-holders, black-origami-crane-place-cards, paper-crane-shower-gift
+  Vol: L–M each | KD: 25–45 | P: P2
+
+Template 3 — Material modifier
+  URL:    /{material}-{product}/
+  Pattern: black | printed | embroidered | gold-foil | white-letter + origami-crane + bridal-shower-gift | place-cards
+  Vol: VL–L | KD: 8–25 | P: P2–P3
+
+Template 4 — Occasion modifier
+  URL:    /bridal-shower-gift-for-{occasion}/
+  Occasions: garden-wedding, formal-wedding, japanese-wedding, winter-wedding, spring-wedding, evening-reception
+  Vol: VL | KD: 10–20 | P: P3
+
+Template 5 — Comparison / alternative
+  URL:    /ideas/{slug}/
+  Slugs: bridal-shower-activities-not-games, keepsake-shower-gifts-not-candles, shower-gift-not-kitchen-gadgets
+  Vol: L–M | KD: 30–45 | P: P4
+
+Template 6 — Theme editions (when products exist)
+  URL:    /themes/{theme}/
+  Themes: good-wishes, garden-party, night-sky, thousand-wishes, midnight-garden, written-in-the-stars
+  Vol: VL | KD: 8–15 | P: P3
+
+================================================================================
+CLUSTER SUMMARY — KEYWORD COUNT & ROLLOUT
+================================================================================
+
+Cluster | Hub URL                              | Spokes | Est. keywords | Wave
+--------|--------------------------------------|--------|---------------|-----
+A       | /origami-bridal-shower-gift/         | 6      | 35            | 1
+B       | / (LIVE)                     | 4      | 28            | LIVE
+C       | /black-origami-crane-place-cards/    | 5      | 32            | 1
+D       | /etsy/                               | 4      | 18            | 2
+E       | /origami-place-card-holders-wedding/ | 5      | 25            | 2
+F       | (material spokes, no single hub)     | 6      | 24            | 2
+G       | /ideas/                              | 4      | 20            | 3
+H       | /how-to/                             | 3      | 12            | 3
+I       | /guest-count/                        | 11+    | 11+           | 3 PROG
+J       | /themes/                             | 3+     | 9+            | 3 PROG
+
+Total addressable from v1 list: ~180+ unique targets
+Wave 1 (P1): 15 pages — core product + black crane + live page optimization
+Wave 2 (P2): 12 pages — Etsy, materials, place cards, senbazuru
+Wave 3 (P3): programmatic guest count + themes + how-to depth
+Wave 4 (P4): ideas/comparison top-of-funnel
+
+================================================================================
+LIVE PAGE OPTIMIZATION — / (maps to v2 now)
+================================================================================
+
+Primary keyword:   origami bridal shower gift / shower to table wedding gift
+Secondary:         fold together bridal shower gift, interactive bridal shower gift
+Title tag (rec):   Origami Bridal Shower Gift — Fold Together, Set on the Wedding Table | Paper Heirloom Company
+Meta desc (rec):   A group bridal shower gift and activity: guests fold origami crane sheets together at the shower; those same cranes become your wedding reception place card holders. Flat printed sheets — not pre-folded.
+H1 (current OK): Fold together at the shower. Set them on the table at the wedding.
+Add H2 targets:    origami bridal shower gift · shower gift that becomes place cards
+Internal links:    (add as pages ship) → black-origami-crane, etsy, place-card-holders
+Schema (future):   Product, FAQ (three steps), BreadcrumbList
+
+================================================================================
+CANONICAL KEYWORD → URL QUICK REFERENCE (no duplicates)
+================================================================================
+
+origami bridal shower gift                 → /origami-bridal-shower-gift/
+origami wedding shower gift                → /origami-wedding-shower-gift/
+origami crane bridal shower gift           → /origami-bridal-shower-gift/
+origami crane wedding shower gift          → /origami-wedding-shower-gift/
+wedding shower origami gift                → /origami-wedding-shower-gift/
+bridal shower origami activity             → /interactive-bridal-shower-gift/
+shower to table wedding gift               → /
+shower gift that becomes place cards       → /shower-gift-becomes-place-cards/
+bridal shower gift that becomes wedding decor → /shower-gift-becomes-place-cards/
+fold together bridal shower gift           → /fold-together-bridal-shower-gift/
+interactive bridal shower gift             → /interactive-bridal-shower-gift/
+group bridal shower gift                   → /group-bridal-shower-gift/
+wedding shower activity gift               → /interactive-bridal-shower-gift/
+bridal shower activity gift                → /interactive-bridal-shower-gift/
+origami place card holders wedding         → /origami-place-card-holders-wedding/
+origami crane place cards wedding          → /origami-place-card-holders-wedding/
+fold it yourself wedding place cards       → /fold-yourself-wedding-place-cards/
+DIY wedding place card holders origami     → /fold-yourself-wedding-place-cards/
+black origami crane wedding                → /black-origami-crane-place-cards/
+black origami crane place cards            → /black-origami-crane-place-cards/
+black paper crane bridal shower gift       → /black-origami-crane-bridal-shower-gift/
+paper crane bridal shower gift             → /origami-bridal-shower-gift/
+paper crane wedding shower gift            → /origami-wedding-shower-gift/
+paper crane wedding place cards            → /paper-crane-wedding-place-cards/
+origami bridal shower gift etsy             → /etsy/origami-bridal-shower-gift/
+origami place card holders etsy            → /etsy/origami-place-card-holders/
+black origami crane white lettering        → /black-origami-crane-white-lettering/
+printed origami crane wedding              → /printed-origami-crane-wedding/
+embroidered origami crane place cards      → /embroidered-origami-crane-place-cards/
+senbazuru bridal shower gift               → /ideas/senbazuru-bridal-shower/
+unique bridal shower gift ideas            → /ideas/unique-bridal-shower-gifts/
+paper heirloom company                     → /
+
+================================================================================
+NEXT STEPS FOR v3
+================================================================================
+
+[ ] Pull real volume/KD from Ahrefs, Semrush, or Google Keyword Planner
+[ ] Validate SERP for P1 keywords (Etsy density, Pinterest, blogs)
+[ ] Add FAQ schema blocks per hub using question keywords from Tier 9
+[ ] Build Wave 1 HTML templates from /index.html design system
+[ ] Set up internal linking matrix (hub ↔ spoke ↔ etsy)
+[ ] Track GSC impressions by URL after each wave ships
+[ ] Map Etsy listing titles to match P1/P2 primary keywords
+[ ] Consider custom domain before large programmatic rollout
+
+================================================================================
+END v2
+================================================================================

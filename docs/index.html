@@ -68,7 +68,7 @@
       min-height: 92vh;
       padding: 48px 56px 72px;
       background:
-        linear-gradient(160deg, rgba(9,9,9,.82) 0%, rgba(21,21,21,.7) 50%, rgba(9,9,9,.88) 100%),
+        linear-gradient(160deg, rgba(9,9,9,.7) 0%, rgba(21,21,21,.52) 45%, rgba(9,9,9,.75) 100%),
         url("assets/dark-swan-origami-wedding-card-holders.png");
       background-size: cover;
       background-position: center;
@@ -76,6 +76,36 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+    }
+
+    .hero-main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      width: 100%;
+      padding: 40px 10vw 0;
+    }
+
+    .hero-feature {
+      width: 100%;
+      max-width: min(920px, 100%);
+      padding: 16px;
+      border: 1px solid rgba(201,162,74,.55);
+      background: rgba(9,9,9,.28);
+      box-shadow:
+        0 0 0 1px rgba(201,162,74,.22),
+        0 0 0 9px rgba(201,162,74,.1),
+        0 16px 48px rgba(0,0,0,.38);
+    }
+
+    .hero-feature img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid rgba(201,162,74,.4);
     }
 
     .hero-top {
@@ -115,13 +145,15 @@
 
     .hero-copy {
       max-width: 720px;
-      margin-top: auto;
+      text-align: center;
     }
 
     .hero-copy p {
       font-size: 18px;
       color: #d8cfc0;
       max-width: 580px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .hero-tagline {
@@ -469,6 +501,19 @@
         padding: 44px 36px 48px;
       }
 
+      .hero-main {
+        padding: 28px 0 0;
+        gap: 32px;
+      }
+
+      .hero-feature {
+        padding: 10px;
+        box-shadow:
+          0 0 0 1px rgba(201,162,74,.22),
+          0 0 0 6px rgba(201,162,74,.08),
+          0 10px 32px rgba(0,0,0,.35);
+      }
+
       .concept-steps {
         gap: 24px;
       }
@@ -517,16 +562,25 @@
       </nav>
     </div>
 
-    <div class="hero-copy">
-      <div class="eyebrow">Bridal shower gift edition</div>
-      <h1>Fold together at the shower. Set them on the table at the wedding.</h1>
-      <p>
-        A gift version of the same concept — part activity, part keepsake,
-        part reception detail. Guests gather around the table, fold the
-        cranes together, and what they make becomes the ornament your
-        wedding tables were waiting for.
-      </p>
-      <p class="hero-tagline">Fold once. Cherish twice.</p>
+    <div class="hero-main">
+      <figure class="hero-feature">
+        <img
+          src="assets/hero-fold-at-shower-display-at-wedding.png"
+          alt="Fold at the Shower, Display at the Wedding — gift set, shower activity, and table place card holders"
+        />
+      </figure>
+
+      <div class="hero-copy">
+        <div class="eyebrow">Bridal shower gift edition</div>
+        <h1>Fold together at the shower. Set them on the table at the wedding.</h1>
+        <p>
+          A gift version of the same concept — part activity, part keepsake,
+          part reception detail. Guests gather around the table, fold the
+          cranes together, and what they make becomes the ornament your
+          wedding tables were waiting for.
+        </p>
+        <p class="hero-tagline">Fold once. Cherish twice.</p>
+      </div>
     </div>
   </header>
 
