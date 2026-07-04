@@ -112,6 +112,48 @@
 
 **Pipeline (typical):** 100 contacted → ~30 reply → ~15 say yes → ~8–10 actually post.
 
+Only count someone as **qualified** before you spend real effort (custom pitch, free kit, wholesale sheet). See **Qualified contact (BANT)** below.
+
+---
+
+## Qualified contact (BANT)
+
+A **qualified contact** is someone worth a personalized outreach — not just a name on a list. They must pass all four:
+
+| Letter | Question | Qualified = yes when… |
+|--------|----------|------------------------|
+| **B — Budget** | Can they afford the fit (money, time, or trade)? | The offer matches what they can spend or accept: gifted set, 15% code, wholesale tier, or cross-promo swap — without stretching your margin or theirs. |
+| **A — Authority** | Can they actually say yes? | They control the decision: shop owner, creator on their own channel, planner who picks client gifts, blogger with editorial say, or FB admin / trusted voice — not an assistant or “maybe my friend knows someone.” |
+| **N — Need** | Is there a real fit for our product? | Their audience or clients care about **bridal shower gifts**, **interactive shower activities**, or **wedding table / place card** moments — not generic wedding décor with no shower angle. |
+| **T — Time** | Is now a good time? | There’s a near-term reason to act: wedding/shower season, active content calendar, clients with showers in the next **3–9 months**, or they’re visibly planning/posting about showers *now* — not “someday maybe.” |
+
+**Rule:** **B + A + N + T all yes → qualified.** Any clear **no** → deprioritize or nurture later.
+
+### Signals by bucket
+
+| Bucket | Budget | Authority | Need | Time |
+|--------|--------|-----------|------|------|
+| **Micro-influencer** | Will post for gift or accepts affiliate terms; not expecting $500+ upfront | Owns IG/TikTok/Pinterest; posts bridal/DIY/wedding content | Recent posts on shower gifts, wedding planning, or DIY table details | Posting weekly+; engaged audience; bridal season or “engaged” content in last 90 days |
+| **Planner / coordinator** | Buys client gifts or refers vendors; wholesale or referral fee works | Names vendors in client materials; replies as the business | Clients want experiential showers or custom table moments | Has weddings/shower clients on calendar this season |
+| **Etsy seller (complementary)** | Cross-promo is enough; no cash deal required | Shop owner or co-owner | Sells adjacent products (games, favors, calligraphy, robes) — **not** competing origami place cards | Active shop; recent sales/reviews; listing updates in last 60 days |
+| **Blogger / newsletter** | Gift + affiliate OK; no paid placement required at launch | Writes or approves gift-guide / shower content | Site/newsletter covers shower gifts or wedding planning | Published shower/wedding gift content in last 12 months or issue planned this season |
+| **FB power user / admin** | Relationship cost only; no product until rapport | Respected voice or admin in bridal/wedding group | Group threads ask for shower activities and gift ideas | Active in group; you’ve lurked/commented; rules allow soft mentions |
+
+### Disqualifiers (any one = not qualified)
+
+- Competing origami place card or shower-activity seller  
+- No bridal/wedding/shower overlap in content or clients  
+- Bot account, inactive >6 months, or bought followers  
+- Can’t accept gift ship (non-US if you only ship domestically, etc.)  
+- “Love it but no weddings until next year” with no content reason → **nurture**, not active pipeline  
+
+### Tracker use
+
+In your spreadsheet, add columns **B / A / N / T** (Y/N) and **Qualified** (auto: all four Y).  
+**Outreach order:** qualified first → sent → replied → yes → posted → paid.
+
+**Target mix:** Of your ~100 names, aim for **~40–50 qualified** before heavy sending; the rest stay on a nurture list.
+
 ---
 
 ## Outreach message template
@@ -188,6 +230,8 @@ Avoid heavy discounting (>25%) early — undercuts “~10% above Etsy comps” p
 | Handle or URL | |
 | Bucket | influencer / planner / seller / blogger / FB |
 | Followers or reach | rough |
+| B / A / N / T | Y/N each — see Qualified contact (BANT) |
+| Qualified | all four Y |
 | Contacted date | |
 | Status | not contacted / sent / replied / yes / posted / paid |
 | Offer | gift / code / wholesale |
