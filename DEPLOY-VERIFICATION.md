@@ -52,8 +52,8 @@ Per [GitHub’s custom Pages workflow docs](https://docs.github.com/en/pages/get
 |-------------|--------------|
 | `permissions: pages: write, id-token: write` | ✓ |
 | `actions/configure-pages@v5` | ✓ |
-| `actions/upload-pages-artifact@v4` + `path: docs` | ✓ |
-| `include-hidden-files: true` (for `.nojekyll`) | ✓ (v4 only) |
+| `actions/upload-pages-artifact@v5` + `path: docs` | ✓ |
+| `include-hidden-files: true` (for `.nojekyll`) | ✓ (v5) |
 | `actions/deploy-pages@v5` | ✓ |
 | `environment: github-pages` | ✓ |
 
@@ -72,7 +72,7 @@ deploy
 | Symptom | Likely fix |
 |---------|------------|
 | Deploy step: “try again later” | Re-run workflow; check [GitHub Status](https://www.githubstatus.com/) |
-| `include-hidden-files` warning | Ensure `upload-pages-artifact@v4` (not v3) |
+| `include-hidden-files` warning | Ensure `upload-pages-artifact@v5` (not v3/v4) |
 | github.io 404 | Pages status not `built` — check Actions log |
 | Custom domain shows Namecheap | Disable URL Forward in Namecheap; wait for DNS |
 | HTTPS not available | Enable **Enforce HTTPS** in Pages settings after first successful deploy |
