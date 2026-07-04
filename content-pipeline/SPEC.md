@@ -1,6 +1,6 @@
 # Paper Heirloom Company — Agent-Driven Content Pipeline Spec v1
 
-**Status:** Spec only — not implemented  
+**Status:** Phase 1 implemented (stubs; no live API calls)  
 **Goal:** Define a basic, file-based media-card workflow that AI agents can operate deterministically.
 
 ## Core idea
@@ -72,6 +72,7 @@ content-pipeline/media/review/2026-07-launch/index.html
     "approved_by": null,
     "approved_at": null
   },
+  "publish_checks": {},
   "published": {}
 }
 ```
@@ -120,7 +121,7 @@ create-media-card --campaign CAMPAIGN --asset PATH --id CARD_ID
 validate-media-cards --campaign CAMPAIGN
 
 # Generate static human review HTML from cards
-generate-human-review-page --campaign CAMPAIGN
+generate-human-review-page --campaign CAMPAIGN [--use-local-model]
 
 # Open the generated review page in Firefox
 open-human-review-page --campaign CAMPAIGN
@@ -131,8 +132,13 @@ mark-media-card-approved --card CARD_ID --approved-by NAME
 # Dry-run a publish connector without posting
 dry-run-publish-media-card --card CARD_ID --platform PLATFORM
 
-# Publish an approved card through a connector
+# Publish an approved card through a connector; requires platform dry-run first
 publish-media-card --card CARD_ID --platform PLATFORM
+
+# Firefox review-window control
+firefox-status
+refresh-human-review-page
+close-human-review-page
 ```
 
 Helpful global flags:
@@ -161,7 +167,7 @@ V1 layout:
 - No external CSS/JS.
 - Vanilla JS allowed only for filtering/display convenience.
 
-The local model may generate simple HTML fragments, but Python must wrap them in a fixed safe template and write the final file.
+The local model may generate simple HTML fragments, but Python must wrap them in a fixed safe template and write the final file. The current integration target is a local OpenAI-compatible `llama-server` at `PAPERHEIRLOOM_LLAMA_SERVER` or `http://127.0.0.1:8080`.
 
 ## Connector interface
 
@@ -189,14 +195,43 @@ Initial connectors may be stubs that only validate and dry-run.
 - TikTok: prefer official Content Posting API; draft upload may be safer than direct post.
 - Playwright/browser automation is not part of v1. If considered later, restrict to supervised upload assistance for our own accounts only; no scraping, engagement automation, proxy/evasion, or mass actions.
 
+## Platform API references
+
+Use these official docs when implementing Phase 2+ connectors. Do not store tokens or secrets in media card JSON.
+
+### Instagram (Meta)
+
+- [Content Publishing](https://developers.facebook.com/docs/instagram-platform/content-publishing) — container → publish flow for images, videos, reels, carousels
+- [IG User Media](https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media/) — `POST /<IG_ID>/media` container creation
+- [Resumable video uploads](https://developers.facebook.com/docs/instagram-platform/content-publishing/resumable-uploads/) — large video / reel upload via `rupload.facebook.com`
+
+### Facebook Page (Meta)
+
+- [Pages API overview](https://developers.facebook.com/docs/pages-api/) — permissions, tasks, posting entry points
+- [Getting Started](https://developers.facebook.com/docs/pages-api/getting-started) — first Page post walkthrough
+- [Posts](https://developers.facebook.com/docs/pages-api/posts/) — text/link posts via `/{page_id}/feed`, photo posts via `/{page_id}/photos`
+- [Page feed reference](https://developers.facebook.com/docs/graph-api/reference/page/feed/) — `POST /{page-id}/feed` parameters
+- [Page photos reference](https://developers.facebook.com/docs/graph-api/reference/page/photos/) — single and multi-photo uploads
+- [Video API publishing](https://developers.facebook.com/docs/video-api/guides/publishing/) — video/reel publish via `/{page_id}/videos`
+
+### TikTok
+
+- [Content Posting API](https://developers.tiktok.com/products/content-posting-api/) — product overview (Direct Post vs Upload)
+- [Get Started — Direct Post](https://developers.tiktok.com/doc/content-posting-api-get-started) — `video.publish` scope, direct profile posting
+- [Get Started — Upload (draft)](https://developers.tiktok.com/doc/content-posting-api-get-started-upload-content) — `video.upload` scope, inbox draft flow
+- [Direct Post API reference](https://developers.tiktok.com/doc/content-posting-api-reference-direct-post) — `/v2/post/publish/video/init/` and upload details
+- [API scopes](https://developers.tiktok.com/doc/tiktok-api-scopes) — `video.publish` vs `video.upload`
+- [OAuth token management](https://developers.tiktok.com/doc/oauth-user-access-token-management) — access/refresh token exchange
+
 ## Agent safety rules
 
 - Never publish unless the user explicitly asks to publish.
 - Never mark approved unless the user explicitly confirms approval.
 - Never infer approval from generated review HTML.
-- Prefer dry-run before publish.
+- Require dry-run for the same platform before live publish.
 - Keep all state in media card JSON files.
 - Do not store secrets in media card JSON.
+- Keep publish state per platform in `publish_checks` and `published`; only mark global `published` when all target platforms are complete.
 
 ## Open questions
 

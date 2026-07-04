@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+content-pipeline/media/raw-upload/*/
+content-pipeline/media/edited-usable-asset/*/
+content-pipeline/media/cards/*/
+content-pipeline/media/review/*/
+!content-pipeline/media/raw-upload/.gitkeep
+!content-pipeline/media/edited-usable-asset/.gitkeep
+!content-pipeline/media/cards/.gitkeep
+!content-pipeline/media/review/.gitkeep

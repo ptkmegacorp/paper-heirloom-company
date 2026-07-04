@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Short wrapper for the Paper Heirloom content pipeline control surface.
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+CLI="$ROOT/content-pipeline/scripts/run-paperheirloom-content-pipeline.py"
+
+exec python3 "$CLI" "$@"
